@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HOTEL GP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel = "icon" href = "images/logo.png" type = "image/png">
+    </head>
+    <body>
+        
+        <!-- header -->
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "site-name">
+                    <span>GEEKPROBIN</span>
+                </div>
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+            </div>
+
+            <div class = "head-bottom flex">
+                <h2>HOTEL JUHU</h2>
+                <h2>NICE AND COMFORTABLE PLACE TO STAY</h2>
+                <p>Hotel juhu is a Budget Premier Hotel with 44 rooms conveniently located in the prime area of Gachibowli IT Hub and well designed rooms as per the modern trends and comforts. No matter whether you are on a business tour or on a holiday, HOTEL JUHU is the best option for your cozy accommodation.</p>
+                <button type = "button" class = "head-btn">GET STARTED</button>
+            </div>
+        </header>
+        <!-- end of header -->
+
+        <!-- side navbar -->
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "#header">home</a></li>
+                <li><a href = "#services">services</a></li>
+                <li><a href = "#rooms">rooms</a></li>
+                <li><a href = "#customers">customers</a></li>
+            </ul>
+            <button class = "btn sign-up">sign up</button>
+            <button class = "btn log-in">log in</button>
+        </div>
+        <!-- end of side navbar -->
+
+        <!-- fullscreen modal -->
+        <div id = "modal"></div>
+        <!-- end of fullscreen modal -->
+
+        <!-- body content  -->
+        <section class = "services sec-width" id = "services">
+            <div class = "title">
+                <h2>services</h2>
+            </div>
+            <div class = "services-container">
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-utensils"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Food Service/ Food Runner</h2>
+                        <p>They can serve multiple roles, but the main function is the food runner acts as the "middle man" between the customer and the kitchen staff, both delivering food to the correct table as quick as possible, assisting staff with the priority of orders and addressing any customer issue that suddenly arises. Generally any business that serves food to customers have food runners such as bars and coffee shops and even room service, being able to switch between front and back of the house. Food runner's duties are to deliver food, identifying customers questions and complaints and addressing those appropriately, greeting guests, providing and explaining the menu, inspecting the food, clearing and cleaning tables.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-swimming-pool"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Continental breakfast attendant</h2>
+<p>The continental breakfast attendant's main role is to provide a hot and cold breakfast buffet service throughout the morning. A continental breakfast usually includes coffee, juice, jam, fruit, and baked goods such as bread and pastries, items chosen because they are shelf-stable, and can be served in portion sizes that are appropriate for large groups of people. The attendant cleans the serving area during the breakfast, refills empty serving dishes or jugs and supplies (e.g., napkins), ensures equipment such as toasters and coffeemakers are functioning well, and answers patron questions. After breakfast, the attendant cleans and prepares the area for the next morning</p>              
+          <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-broom"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Housekeeping</h2>
+<P>A housekeeping supervisor role is to oversee the activities of the staff that clean the facilities to make sure of the sanitation, orderly and appeal of the rooms is up to high standard in the hotel but can also include other establishments such as hospitals and anything in a similar regard. they may also assist in the duties of other staff members and inspect the work, they also address the complaints and inquires about the housekeeping service as well as recruit and train new staff members</P>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+                <!-- single service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-door-closed"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Hotel Security</h2>
+                        <p>Hotel security monitor the security system in the restaurant and communal areas of the hotel. They establish and maintain emergency procedures, and identify and implement risk management programs on order to be prepared for an unlikely emergency situation such as food poisoning.</p>
+                        <button type = "button" class = "btn">Know More</button>
+                    </div>
+                </article>
+                <!-- end of single service -->
+            </div>
+        </section>
+
+        <div class = "book">
+            <form class = "book-form">
+                <div class = "form-item">
+                    <label for = "checkin-date">Check In Date: </label>
+                    <input type = "date" id = "chekin-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "checkout-date">Check Out Date: </label>
+                    <input type = "date" id = "chekout-date">
+                </div>
+                <div class = "form-item">
+                    <label for = "adult">Adults: </label>
+                    <input type = "number" min = "1" value = "1" id = "adult">
+                </div>
+                <div class = "form-item">
+                    <label for = "children">Children: </label>
+                    <input type = "number" min = "1" value = "1" id = "children">
+                </div>
+                <div class = "form-item">
+                    <label for = "rooms">Rooms: </label>
+                    <input type = "number" min = "1" value = "1" id = "rooms">
+                </div>
+                <div class = "form-item">
+                    <input type = "submit" class = "btn" value = "Book Now">
+                </div>
+            </form>
+        </div>
+
+        <section class = "rooms sec-width" id = "rooms">
+            <div class = "title">
+                <h2>rooms</h2>
+            </div>
+            <div class = "rooms-container">
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img1.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Deluxe Room</h3>
+                        
+                        <p>Spacious and warm, these contemporary Juhu hotel rooms with 1 king-size bed or 2 single beds offer the best 5-star hotel rooms in Mumbai. The rooms also include a comfortable single-double sofa chair. An abundance of natural light filters into the rooms through sheer curtains hung before a large picture window. These sea-facing rooms at our Ramada Plaza Palm Grove, Mumbai also come with a separate workspace with a desk and chair.
+                        </p>
+                        <p class = "rate">
+                            <span>$99.00 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img2.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                       <h3>Premium Room</h3>
+                       <P>Premium Rooms at Ramada Plaza Palm Grove are spacious with 1 king-size bed or 2 single beds for a comfortable stay at our beach hotel in Mumbai. Our rooms also include a comfortable single-double sofa chair. An abundance of natural light filters into the rooms through sheer curtains hung before a large picture window. These sea-facing Juhu hotel rooms at our Ramada Plaza Palm Groove, also come with a separate workspace with a desk and chair.</P>
+                        <p class = "rate">
+                            <span>$99.00 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img3.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Deluxe Suite</h3>
+                    <p>These Deluxe suites have a city-view as well as an ocean-view option - offering the best 5 Star Juhu hotel suites near Mumbai airport. Enjoy a view of the Arabian Sea through floor-to-ceiling windows when you stay in these suites at Ramada Plaza Palm Grove, Juhu Beach. The living room is furnished with two 3-seater sofas, a large coffee table, and two side tables. What's more? These sea-facing rooms will wake up you with the gentle sound of the sea and ensure your day is filled with relaxation.
+                    </p>
+                        <p class = "rate">
+                            <span>$99.00 /</span> Per Night
+                        </p>
+                        <button type = "button" class = "btn">book now</button>
+                    </div>
+                </article>
+                <!-- end of single room -->
+            </div>
+        </section>
+
+
+        <section class = "customers" id = "customers">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h2>customers</h2>
+                </div>
+                <div class = "customers-container">
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>We Loved it</h3>
+                        <p>Great location, really pleasant and clean rooms, but the thing that makes this such a good place to stay are the staff. All of the people are incredibly helpful and generous with their time and advice</p>
+                        <img src = "images/cus1.jpg" alt = "customer image">
+                        <span>Customer Name-Tim, Country-England</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Food service</h3>
+                        <p>Breakfast was great, typical Italian hotel breakfast judging from the hotel we stayed at before this one, except you get your coffee/capu/cafe made for you by a nice staff member</p>
+                        <img src = "images/cus2.jpg" alt = "customer image">
+                        <span>Customer Name-salina, Country-Dubai</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <h3>Nice Place</h3>
+                        <p>Good location. In the middle of the city, yet a calm and soothing place. Looks inspired from one of my all time favorites. Cleanliness seems to be on high priority. Breakfast was decent. Nice common and restaurant area to sit and relax.
+                        </p>
+                        <img src = "images/cus3.jpg" alt = "customer image">
+                        <span>Customer Name-M.jhon, Country-USA</span>
+                    </div>
+                    <!-- end of single customer -->
+                </div>
+            </div>
+        </section>
+        <!-- end of body content -->
+        
+        <!-- footer -->
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>About Us </h2>
+                    <p>Hotel juhu is a Budget Premier Hotel with 44 rooms conveniently located in the prime area of Gachibowli IT Hub and well designed rooms as per the modern trends and comforts. No matter whether you are on a business tour or on a holiday, HOTEL JUHU is the best option for your cozy accommodation.</p>
+                    <ul class = "social-icons">
+                        <li class = "flex">
+                            <i class = "fa fa-twitter fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-facebook fa-2x"></i>
+                        </li>
+                        <li class = "flex">
+                            <i class = "fa fa-instagram fa-2x"></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2>Useful Links</h2>
+                    <a href = "#">Blog</a>
+                    <a href = "#">Rooms</a>
+                    <a href = "#">Subscription</a>
+                    <a href = "#">Gift Card</a>
+                </div>
+
+                <div>
+                    <h2>Privacy</h2>
+                    <a href = "#">Career</a>
+                    <a href = "#">About Us</a>
+                    <a href = "#">Contact Us</a>
+                    <a href = "#">Services</a>
+                </div>
+
+                <div>
+                    <h2>Have A Question</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            Juhu Beach, Juhu Rd, next to chatrapati Shivaji Maharaj Statue, Nazir Wadi, Theosophical Housing Colony, Juhu, Mumbai, Maharashtra 400049
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            +84545 37534 48
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            hoteljuhu@domain.com
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end of footer -->
+        
+        <script src="script.js"></script>
+    </body>
+</html>
